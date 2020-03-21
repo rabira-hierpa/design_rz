@@ -11,6 +11,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Design Rዚ'),
+        backgroundColor: Colors.blue[900],
         centerTitle: true,
       ),
       body: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <

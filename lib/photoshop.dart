@@ -13,22 +13,41 @@ class _PhotoshopDesign extends State<PhotoshopDesign> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blueAccent[900],
         title: Text('Photoshop Designs'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Column(
+      backgroundColor: Colors.blueAccent[100],
+      body: Column(
           mainAxisSize: MainAxisSize.min,
-          children: <Widget>[Image.asset('assets/img/$n.jpg')],
+          children: <Widget>[
+            Expanded(child: Center(child:Image.asset('assets/img/$n.jpg')),),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                RaisedButton(
+                  child: Icon(Icons.navigate_before,color: Colors.white,), 
+                        onPressed: () {
+                            setState(() {
+                              n >= 45 ? n = 1 : n++;
+                            });
+                        },
+                 color: Colors.blueAccent,
+                 shape: CircleBorder()
+                 ),
+                RaisedButton(
+                  child: Icon(Icons.navigate_next,color: Colors.white,), 
+                        onPressed: () {
+                            setState(() {
+                              n == 1 ? n = 45 : n--;
+                            });
+                        },
+                 color: Colors.blueAccent,
+                 shape: CircleBorder()
+                 ),
+            ],),],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-        setState(() {
-          n >= 45 ? n = 1 : n++;
-        });
-      },child: Icon(Icons.navigate_next),
-      ),
     );
   }
 }
