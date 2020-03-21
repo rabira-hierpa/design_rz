@@ -7,15 +7,18 @@ class IllustratorDesign extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[800],
       appBar: AppBar(
-        title: Text('Design Rዚ'),
+        title: Text('Illustrator Designs'),
+        backgroundColor: Colors.orange[900],
         centerTitle: true,
       ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Text(pageDesign, style: TextStyle(fontSize: 36))
+            Icon(Icons.timelapse,size: 100,color: Colors.white54,),
+            Text('Coming Soon', style: TextStyle(fontSize: 36,color: Colors.white,fontWeight: FontWeight.bold))
           ],
         ),
       ),
