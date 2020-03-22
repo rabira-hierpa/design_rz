@@ -1,16 +1,19 @@
-# design_rz
+# Design Rዚ - Flutter Mobile app
 
-A new Flutter project.
+A Flutter mobile app for the Graphics Design Course I took at Berehana Selam,4 Kilo,Addis Ababa,Ethiopia
+
+![Deisng Rz Banner](./assets/img/design-rz-web-banner.png)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with the project clone the repo and start debugging
 
-A few resources to get you started if this is your first Flutter project:
+```shell
+git clone https://github.com/rabira-hierpa/design_rz
+cd design_rz
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
+For help getting started with Flutter, view the
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
