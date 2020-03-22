@@ -46,8 +46,8 @@ class _PhotoshopDesign extends State<PhotoshopDesign> {
                  color: Colors.blueAccent,
                  shape: CircleBorder()
                  ),
-            ],),],
-        ),
+          ],),],
+      ),
     );
   }
 }
