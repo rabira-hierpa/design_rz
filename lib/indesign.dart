@@ -17,9 +17,17 @@ class IndesignDesign extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Icon(Icons.timelapse,size: 100,color: Colors.white54,),
-            Text('Coming Soon', style: TextStyle(fontSize: 36,color: Colors.white,fontWeight: FontWeight.bold))
-            ],
+            Icon(
+              Icons.timelapse,
+              size: 100,
+              color: Colors.white54,
+            ),
+            Text('Coming Soon',
+                style: TextStyle(
+                    fontSize: 36,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold))
+          ],
         ),
       ),
     );
